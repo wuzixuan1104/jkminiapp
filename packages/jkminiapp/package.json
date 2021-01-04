@@ -21,7 +21,8 @@
     "prebuild": "rm -rf cjs esm",
     "build": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir cjs",
-    "prepack": "yarn build"
+    "prepack": "yarn build",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "@jkminiapp/types": "*",

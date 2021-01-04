@@ -8,7 +8,8 @@
     "prebuild": "npm run clean",
     "build": "tsc",
     "test": "jest",
-    "test:debug": "npx --node-arg=--inspect-brk jest -i"
+    "test:debug": "npx --node-arg=--inspect-brk jest -i",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "@jkminiapp/shared": "*",

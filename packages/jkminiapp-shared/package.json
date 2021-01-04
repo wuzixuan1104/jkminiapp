@@ -10,7 +10,8 @@
     "prebuild": "npm run clean",
     "build": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir cjs",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "@jkminiapp/types": "*"
