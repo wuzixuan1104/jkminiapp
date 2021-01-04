@@ -1,6 +1,7 @@
 {
-  "name": "ts-monorepo",
+  "name": "jkminiapp",
   "description": "Template for setting up a TypeScript monorepo",
+  "version": "1.0.0",
   "private": true,
   "workspaces": [
     "packages/*"
