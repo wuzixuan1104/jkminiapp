@@ -8,6 +8,11 @@
   "bin": {
     "remax": "./bin/jkminiapp"
   },
+  "files": [
+    "bin",
+    "cjs",
+    "esm"
+  ],
   "keywords": [
     "miniapp"
   ],
@@ -25,5 +30,8 @@
   },
   "devDependencies": {
     "jest": "^26.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
