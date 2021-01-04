@@ -1,3 +1,15 @@
 {
-  "extends": "../../tsconfig.json"
+  "extends": "../../tsconfig.build.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2017",
+    "declaration": true,
+    "rootDir": "src",
+    "outDir": "lib",
+    "types": ["@types/jest"],
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["tests", "lib", "src/__tests__"]
 }
