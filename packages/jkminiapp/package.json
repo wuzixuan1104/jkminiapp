@@ -19,8 +19,11 @@
     "prepack": "yarn build"
   },
   "dependencies": {
+    "@jkminiapp/types": "*",
     "mini-types": "^0.1.1",
-    "miniprogram-api-typings": "^3.1.3",
-    "@jkminiapp/types": "*"
+    "miniprogram-api-typings": "^3.1.3"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }
