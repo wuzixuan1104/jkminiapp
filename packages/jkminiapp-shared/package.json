@@ -1,0 +1,24 @@
+{
+  "name": "@jkminiapp/shared",
+  "description": "jkminiapp shared",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "test": "jest",
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+    "@jkminiapp/types": "*"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "~7.10.4",
+    "@types/jest": "~26.0.4",
+    "babel-plugin-module-resolver": "~4.0.0",
+    "jest": "~26.1.0"
+  }
+}
