@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ESNext",
     "target": "es5",
-    "sourceMap": true,
-    "noEmitOnError": true
-  },
-
-  "exclude": ["node_modules", "dist"],
-  "include": ["src", "typings"]
+    "strict": true,
+    "composite": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "skipLibCheck": true
+  }
 }

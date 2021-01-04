@@ -1,20 +1,22 @@
 {
   "name": "@jkminiapp/types",
   "version": "1.0.0",
-  "main": "dist/index",
-  "types": "dist/index",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "yarn run clean && yarn run compile",
-    "clean": "rimraf -rf ./dist",
-    "compile": "tsc -p tsconfig.build.json",
-    "prepublishOnly": "yarn run build",
-    "test": "yarn run build"
+    "clean": "rimraf lib tsconfig.tsbuildinfo",
+    "prebuild": "npm run clean",
+    "build": "tsc"
   },
   "devDependencies": {
     "rimraf": "~3.0.2",
     "typescript": "~4.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

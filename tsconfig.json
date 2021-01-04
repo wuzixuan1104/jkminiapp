@@ -1,14 +1,17 @@
 {
-  "extends": "./tsconfig.build.json",
-
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@jkminiapp/*": ["packages/*/src"]
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/jkminiapp-cli"
     },
-    "jsx": "react",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "types": []
-  }
+    {
+      "path": "./packages/jkminiapp-shared"
+    },
+    {
+      "path": "./packages/jkminiapp-types"
+    },
+    {
+      "path": "./packages/jkminiapp"
+    }
+  ]
 }

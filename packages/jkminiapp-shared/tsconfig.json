@@ -1,6 +1,11 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.build.json",
   "compilerOptions": {
-    "types": ["jest"]
-  }
+    "rootDir": "src",
+    "outDir": "esm",
+    "declaration": true,
+    "skipLibCheck": true,
+    "jsx": "react"
+  },
+  "exclude": ["src/__tests__", "cjs", "esm"]
 }
