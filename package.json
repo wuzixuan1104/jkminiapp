@@ -15,7 +15,8 @@
     "test": "lerna run test",
     "watch": "concurrently \"lerna run build --parallel -- -w\" \"tsc -b -w\"",
     "prerelease": "./scripts/prerelease",
-    "release": "lerna publish --force-publish --exact"
+    "release": "lerna publish --force-publish --exact",
+    "prepare": "yarn build"
   },
   "devDependencies": {
     "@nighttrax/eslint-config-tsx": "~7.0.0",
