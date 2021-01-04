@@ -5,6 +5,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "files": [
+    "packages/*"
+  ],
   "scripts": {
     "docs": "doctoc --title '**Table of content**' README.md",
     "clean": "lerna run clean",
