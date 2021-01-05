@@ -6,7 +6,7 @@
   "module": "./esm/index.js",
   "types": "./esm/index.d.ts",
   "bin": {
-    "remax": "./bin/jkminiapp"
+    "jkminiapp": "./bin/jkminiapp"
   },
   "files": [
     "bin",
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@jkminiapp/types": "*",
+    "@jkminiapp/cli": "*",
     "mini-types": "^0.1.1",
     "miniprogram-api-typings": "^3.1.3"
   },

@@ -1,3 +1,8 @@
-import { meaningOfLife } from "@jkminiapp/types";
+import yargs from "yargs";
 
-export default meaningOfLife;
+export default class JkminiappCli {
+  run(args: any) {
+    console.log(args);
+    
+  }
+}

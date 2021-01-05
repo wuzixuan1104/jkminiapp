@@ -1,0 +1,25 @@
+{
+  "name": "@jkminiapp/framework",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "shari.wu <shari.wu@jkos.com>",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rimraf lib tsconfig.tsbuildinfo",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "rimraf": "~3.0.2",
+    "typescript": "~4.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

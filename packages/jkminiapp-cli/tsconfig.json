@@ -6,7 +6,7 @@
     "declaration": true,
     "rootDir": "src",
     "outDir": "lib",
-    "types": ["@types/jest"],
+    "types": ["@types/jest", "node"],
     "jsx": "preserve",
     "skipLibCheck": true,
     "resolveJsonModule": true

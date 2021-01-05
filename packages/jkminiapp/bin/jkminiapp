@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const JkminiappCLI = require("@jkminiapp/cli").default;
+
+new JkminiappCLI().run(process.argv.slice(2, process.argv.length));

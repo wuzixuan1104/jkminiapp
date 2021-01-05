@@ -1,7 +1,8 @@
-import meaningOfLife from "../";
+import JkminiappCli from "../";
 
 describe("meaning of life", () => {
   it("should be 42", () => {
-    expect(meaningOfLife).toEqual(12);
+    const cli = new JkminiappCli();
+    cli.run();
   });
 });
